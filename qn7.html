@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>FORMS</title>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <fieldset>
+        <form style="text-align:left;" action="qn6.html" onsubmit="return validate()">
+            <h2 ><b>Login Form</b></h2>
+            <p>
+                <label for="sname">Name</label>
+                <input type="text" name="fname" id="fname" placeholder="FirstName">
+                <input type="text" name="fname" id="lname" placeholder="LastName">
+            </p>
+            <p>
+                <label for="email_id">Email</label>
+                <input type="email" name="email_id" id="email_id" placeholder="Email">
+            </p>
+            <p>
+                <label for="pnumber">Phone Number</label>
+                <input type="number" name="pnumber" id="pnumber" size="10" placeholder="10-digit number">
+            </p>
+            <p>
+                <label for="user_password">Password</label>
+                <input type="password" name="user_password" id="user_password" placeholder="password">
+            </p>
+            <p>
+                <label for="gender">Gender</label><br>
+                <input type="radio" name="gender" id="gender_male" checked>Male<br>
+                <input type="radio" name="gender" id="gender_female">Female<br>
+                <input type="radio" name="gender" id="gender_no">Not wish to Disclose
+            </p>
+            <p>
+                <label for="address">Address:</label><br>
+                <textarea name="address" id="address" style="height: 70; width: 170;"></textarea>
+            </p>
+            <p>
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" name="dob" id="dob">
+            </p>
+            <p>
+                <label for="time">Time</label><br>
+                <input type="time" name="time" id="time">
+            </p>
+            <p>
+                <label for="languages">Languages</label><br>
+                <input type="checkbox" name="tamil" id="languages">Tamil<br>
+                <input type="checkbox" name="english" id="languages">English<br>
+                <input type="checkbox" name="french" id="languages">French
+            </p>
+            <p>
+                <label for="intrest">Select Your field of intrest:</label><br>
+                <select size="3">
+                    <option value="music">Music</option><br>
+                    <option value="cycling">Cycling</option><br>
+                    <option value="badminton">Badminton</option>
+                    <option value="swimming">Swimming</option>
+                </select>
+            </p>
+            <p>
+                <label for="photo">Upload your Photo</label><br>
+                <input type="file" name="photo" id="photo">
+            </p>
+            <input type="submit" onclick="intoTable()">
+            <input type="reset">
+        </form>
+    </fieldset>
+</body>
+
+</html>
