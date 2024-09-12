@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <title>Forms</title>
+    </head>
+    <body>
+        <fieldset>
+        <legend><b>Login Form</b></legend>
+        <form method="POST">
+            <p>
+                Username:<br> <input type="text" name="username" placeholder="Enter username" size="15" maxlength="25">
+            </p>
+            <p>
+                Password:<br><input type="password" name="password" placeholder="Enter password" size="15" maxlength="12">
+            </p>
+            <p>
+                <input type="submit" name="login-button" value="LogIn">
+            </p>
+        </form>
+        </fieldset>
+        <hr>
+        
+        <hr>
+        <h1><b>Comment Form</b></h1>
+        <form>
+            <p>
+                Name:<br><input type="text" name="your_name">
+            </p>
+            <p>
+                Email:<br><input type="text" name="your_email_id">
+            </p>
+            <p>
+                Is this a <br>
+                <input type="radio" name="request_type" id="sales" value="sales"><label for="sales">Sales Request</label>
+                <input type="radio" name="request_type" id="support" value="support" checked>Support Request
+            </p>
+            <p>
+                Hobbies<br>
+                <input type="checkbox" name="hobbies[]" value="Cricket">Cricket
+                <input type="checkbox" name="hobbies[]" value="Drawing">Drawing
+                <input type="checkbox" name="hobbies[]" value="Swimming">Swimmimg
+                <input type="checkbox" name="hobbies[]" value="Travelling">Travelling
+                <input type="checkbox" name="hobbies[]" value="Movies">Movies
+            </p>
+            <p>
+                Select you hobby:<br>
+                <select name="hobby" id="hobby" multiple size="3">
+                    <option value="">Select hobby</option>
+                    <option value="Cricket">Cricket</option>
+                    <option value="Drawing">Drawing</option>
+                    <option value="Swimming">Swimming</option>
+                    <option value="Travelling">Travelling</option>
+                    <option value="Movies">Movies</option>
+                </select>
+            </p>
+            <p>
+                Comments:<br>
+                <textarea type="text" cols="35" rows="5" placeholder="Enter your comments"></textarea>
+            </p>
+            <p>
+                <input type="submit" name="login-button" value="LogIn">
+            </p>
+        </form>
+
+        <hr>
+        <h1><b>Application Form</b></h1>
+        <form method="POST" action="" enctype="multipart/form-data">
+            <p>
+                Your Name:<br>
+                <input type="text" name="your_name"  size="15" placeholder="Enter name">
+                <br>
+                Your Education<br>
+                <select name="education" id="education" multiple size="3">
+                    <option value="b.e">B.E</option>
+                    <option value="b.tech">B.Tech</option>
+                    <option value="b.c.a">B.C.A</B></option>
+                    <option value="b.sc">B.Sc</option>
+                </select>
+                <br>
+                <label> want to apply for the position</label><br>
+                <select name="position" id="position">
+                    <option value="front_end_developer">Frontend Developer</option>
+                    <option value="back_end_developer">Backend Developer</option>
+                    <option value="full_stack_developer">Fullstack Developer</option>
+                </select>
+                <br>
+                <label>Your Resume:</label>
+                <input type="file" name="resume">   
+                <br>
+                <input type="submit" value="Send Details">
+            </p>
+        </form>
+    </body>
+</html>
